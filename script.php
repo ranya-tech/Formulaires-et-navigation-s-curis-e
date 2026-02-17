@@ -5,6 +5,8 @@
         <option value="fait">Fait</option>
     </select>
     <button type="submit" name='btn'>Filtrer</button>
+    <input type="text" name="" palceholder="Ajoutez une tâches">
+    <button type="submit">Ajouter</button>
 </form>
 <?php
 $json = file_get_contents('data.json');
@@ -64,7 +66,3 @@ foreach($taches as $tache){
 $table.= "</table>";
 echo $table."<br>";
 ?>
-<form method="post">
-    <input type="text" name="" palceholder="">
-    <button type="submit">Ajouter</button>
-</form>
